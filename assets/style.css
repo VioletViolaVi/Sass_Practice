@@ -1,31 +1,7 @@
-.first p {
-  color: red;
-  cursor: pointer;
-}
-
-.first p:hover {
+/* unless written like this (comments that is) */
+header {
+  font-weight: 900;
   color: blue;
-  background-color: red;
-}
-
-.second p {
-  color: pink;
-  cursor: pointer;
-}
-
-.second p:hover {
-  color: green;
-  background-color: blue;
-}
-
-.third p {
-  color: brown;
-  cursor: pointer;
-}
-
-.third p:hover {
-  color: red;
-  background-color: green;
 }
 
 h2 {
@@ -46,14 +22,38 @@ h4 {
   color: blue;
 }
 
-/* unless written like this (comments that is) */
-header {
-  font-weight: 900;
-  color: blue;
-}
-
 button {
   font-weight: 900;
+  background-color: green;
+}
+
+.first .firstPara {
+  color: red;
+  cursor: pointer;
+}
+
+.first .firstPara:hover {
+  color: blue;
+  background-color: red;
+}
+
+.second .secondPara {
+  color: pink;
+  cursor: pointer;
+}
+
+.secondPara:hover {
+  color: green;
+  background-color: blue;
+}
+
+.thirdPara {
+  color: brown;
+  cursor: pointer;
+}
+
+.thirdPara:hover {
+  color: red;
   background-color: green;
 }
 /*# sourceMappingURL=style.css.map */

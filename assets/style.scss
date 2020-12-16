@@ -9,37 +9,12 @@ $text-colour: (
 );
 $pointing-cursor: pointer;
 
-.first {
-  p {
-    color: map-get($text-colour, "text-red");
-    cursor: $pointing-cursor;
-  }
-  p:hover {
-    color: $blue;
-    background-color: $red;
-  }
-}
+// for header (also comments don't show on css file)
+/* unless written like this (comments that is) */
 
-.second {
-  p {
-    color: map-get($text-colour, "text-pink");
-    cursor: $pointing-cursor;
-  }
-  p:hover {
-    color: $green;
-    background-color: $blue;
-  }
-}
-
-.third {
-  p {
-    color: map-get($text-colour, "text-brown");
-    cursor: $pointing-cursor;
-  }
-  p:hover {
-    color: $red;
-    background-color: $green;
-  }
+header {
+  font-weight: $fw-900;
+  color: $blue;
 }
 
 h2 {
@@ -60,15 +35,40 @@ h4 {
   color: $blue;
 }
 
-// for header (also comments don't show on css file)
-/* unless written like this (comments that is) */
-
-header {
-  font-weight: $fw-900;
-  color: $blue;
-}
-
 button {
   font-weight: $fw-900;
   background-color: $green;
+}
+
+.first {
+  .firstPara {
+    color: map-get($text-colour, "text-red");
+    cursor: $pointing-cursor;
+  }
+  .firstPara:hover {
+    color: $blue;
+    background-color: $red;
+  }
+}
+
+.second {
+  .secondPara {
+    color: map-get($text-colour, "text-pink");
+    cursor: $pointing-cursor;
+  }
+  &Para:hover {
+    color: $green;
+    background-color: $blue;
+  }
+}
+
+.third {
+  &Para {
+    color: map-get($text-colour, "text-brown");
+    cursor: $pointing-cursor;
+  }
+  &Para:hover {
+    color: $red;
+    background-color: $green;
+  }
 }
