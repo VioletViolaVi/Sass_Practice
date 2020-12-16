@@ -1,3 +1,74 @@
-* {
-  background-color: lightblue;
+$blue: blue;
+$green: green;
+$red: red;
+$fw-900: 900;
+$text-colour: (
+  "text-red": red,
+  "text-pink": pink,
+  "text-brown": brown,
+);
+$pointing-cursor: pointer;
+
+.first {
+  p {
+    color: map-get($text-colour, "text-red");
+    cursor: $pointing-cursor;
+  }
+  p:hover {
+    color: $blue;
+    background-color: $red;
+  }
+}
+
+.second {
+  p {
+    color: map-get($text-colour, "text-pink");
+    cursor: $pointing-cursor;
+  }
+  p:hover {
+    color: $green;
+    background-color: $blue;
+  }
+}
+
+.third {
+  p {
+    color: map-get($text-colour, "text-brown");
+    cursor: $pointing-cursor;
+  }
+  p:hover {
+    color: $red;
+    background-color: $green;
+  }
+}
+
+h2 {
+  color: map-get($text-colour, "text-red");
+}
+
+h3 {
+  color: map-get($text-colour, "text-pink");
+}
+
+h4 {
+  color: map-get($text-colour, "text-brown");
+}
+
+.para {
+  font-weight: $fw-900;
+  background-color: $green;
+  color: $blue;
+}
+
+// for header (also comments don't show on css file)
+/* unless written like this (comments that is) */
+
+header {
+  font-weight: $fw-900;
+  color: $blue;
+}
+
+button {
+  font-weight: $fw-900;
+  background-color: $green;
 }

@@ -1,0 +1,59 @@
+.first p {
+  color: red;
+  cursor: pointer;
+}
+
+.first p:hover {
+  color: blue;
+  background-color: red;
+}
+
+.second p {
+  color: pink;
+  cursor: pointer;
+}
+
+.second p:hover {
+  color: green;
+  background-color: blue;
+}
+
+.third p {
+  color: brown;
+  cursor: pointer;
+}
+
+.third p:hover {
+  color: red;
+  background-color: green;
+}
+
+h2 {
+  color: red;
+}
+
+h3 {
+  color: pink;
+}
+
+h4 {
+  color: brown;
+}
+
+.para {
+  font-weight: 900;
+  background-color: green;
+  color: blue;
+}
+
+/* unless written like this (comments that is) */
+header {
+  font-weight: 900;
+  color: blue;
+}
+
+button {
+  font-weight: 900;
+  background-color: green;
+}
+/*# sourceMappingURL=style.css.map */
