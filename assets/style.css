@@ -27,33 +27,33 @@ button {
   background-color: green;
 }
 
-.first .firstPara {
+.first .para1 {
   color: red;
   cursor: pointer;
 }
 
-.first .firstPara:hover {
+.first .para1:hover {
   color: blue;
   background-color: red;
 }
 
-.second .secondPara {
+.second .para2 {
   color: pink;
   cursor: pointer;
 }
 
-.secondPara:hover {
-  color: green;
-  background-color: blue;
+.second .para2:hover {
+  color: orange;
+  background-color: purple;
 }
 
-.thirdPara {
-  color: brown;
+.third .para3 {
+  color: yellow;
   cursor: pointer;
 }
 
-.thirdPara:hover {
-  color: red;
-  background-color: green;
+.third .para3:hover {
+  color: green;
+  background-color: yellow;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,11 +1,15 @@
 $blue: blue;
 $green: green;
 $red: red;
+$orange: orange;
+$purple: purple;
+$yellow: yellow;
 $fw-900: 900;
 $text-colour: (
   "text-red": red,
   "text-pink": pink,
   "text-brown": brown,
+  "text-yellow": yellow,
 );
 $pointing-cursor: pointer;
 
@@ -41,34 +45,34 @@ button {
 }
 
 .first {
-  .firstPara {
+  & .para1 {
     color: map-get($text-colour, "text-red");
     cursor: $pointing-cursor;
   }
-  .firstPara:hover {
+  & .para1:hover {
     color: $blue;
     background-color: $red;
   }
 }
 
 .second {
-  .secondPara {
+  & .para2 {
     color: map-get($text-colour, "text-pink");
     cursor: $pointing-cursor;
   }
-  &Para:hover {
-    color: $green;
-    background-color: $blue;
+  & .para2:hover {
+    color: $orange;
+    background-color: $purple;
   }
 }
 
 .third {
-  &Para {
-    color: map-get($text-colour, "text-brown");
+  & .para3 {
+    color: map-get($text-colour, "text-yellow");
     cursor: $pointing-cursor;
   }
-  &Para:hover {
-    color: $red;
-    background-color: $green;
+  & .para3:hover {
+    color: $green;
+    background-color: $yellow;
   }
 }
