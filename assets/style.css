@@ -1,10 +1,27 @@
 /* unless written like this (comments that is) */
 header {
+  text-align: center;
+  font-size: 5em;
+  background-color: purple;
+  font-weight: 900;
+  width: 50%;
+  text-decoration: underline;
   font-weight: 900;
   color: blue;
 }
 
+#mainTitle {
+  color: pink;
+  text-decoration: underline;
+}
+
 h2 {
+  text-align: center;
+  font-size: 5em;
+  background-color: purple;
+  font-weight: 900;
+  width: 50%;
+  text-decoration: underline;
   color: red;
 }
 
@@ -28,6 +45,12 @@ button {
 }
 
 .first .para1 {
+  text-align: center;
+  font-size: 5em;
+  background-color: purple;
+  font-weight: 900;
+  width: 50%;
+  text-decoration: underline;
   color: red;
   cursor: pointer;
 }
@@ -54,6 +77,22 @@ button {
 
 .third .para3:hover {
   color: green;
+  background-color: yellow;
+}
+
+.third .thirdPara4 {
+  background-color: orange;
+  width: 50%;
+}
+
+.third .thirdPara5 {
+  background-color: pink;
+  width: 50%;
+}
+
+.sidebar {
+  float: left;
+  margin-left: 64px;
   background-color: yellow;
 }
 /*# sourceMappingURL=style.css.map */

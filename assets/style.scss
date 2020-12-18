@@ -1,10 +1,15 @@
+// for header (also comments don't show on css file)
+/* unless written like this (comments that is) */
+
 $blue: blue;
 $green: green;
 $red: red;
 $orange: orange;
 $purple: purple;
 $yellow: yellow;
+$pink: pink;
 $fw-900: 900;
+$width50: 50%;
 $text-colour: (
   "text-red": red,
   "text-pink": pink,
@@ -13,15 +18,28 @@ $text-colour: (
 );
 $pointing-cursor: pointer;
 
-// for header (also comments don't show on css file)
-/* unless written like this (comments that is) */
+@mixin centering($underline) {
+  text-align: center;
+  font-size: 5em;
+  background-color: $purple;
+  font-weight: $fw-900;
+  width: $width50;
+  text-decoration: $underline;
+}
 
 header {
+  @include centering(underline);
   font-weight: $fw-900;
   color: $blue;
 }
 
+#mainTitle {
+  color: $pink;
+  text-decoration: underline;
+}
+
 h2 {
+  @include centering(underline);
   color: map-get($text-colour, "text-red");
 }
 
@@ -46,6 +64,7 @@ button {
 
 .first {
   & .para1 {
+    @include centering(underline);
     color: map-get($text-colour, "text-red");
     cursor: $pointing-cursor;
   }
@@ -75,4 +94,26 @@ button {
     color: $green;
     background-color: $yellow;
   }
+  #{&}Para4 {
+    background-color: $orange;
+    width: $width50;
+  }
+  & &Para5 {
+    background-color: $pink;
+    width: $width50;
+  }
+}
+
+@function pow($base, $exponent) {
+  $result: 1;
+  @for $_ from 1 through $exponent {
+    $result: $result * $base;
+  }
+  @return $result;
+}
+
+.sidebar {
+  float: left;
+  margin-left: pow(4, 3) * 1px;
+  background-color: $yellow;
 }
